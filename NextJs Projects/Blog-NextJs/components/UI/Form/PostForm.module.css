@@ -1,0 +1,230 @@
+.addPostContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addPostContainer::before {
+  content: "";
+  z-index: 8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 70px;
+}
+
+.addPost {
+  width: 650px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, #eeb675, #f0689a);
+  position: absolute;
+  z-index: 9;
+  top: 80px;
+  transform: scale(0);
+  animation: grow 250ms ease-in forwards;
+}
+
+.addPost h2 {
+  text-transform: capitalize;
+  color: #04773dfd;
+}
+
+.closeBtn {
+  transition: transform 0.5s ease-in;
+  color: var(--color-light);
+  padding: 0.1rem;
+  background-color: var(--color-danger);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.5rem white;
+}
+
+.closeBtn:hover {
+  transform: rotate(180deg);
+}
+
+.closeBtn:active {
+  box-shadow: none;
+  transform: scale(0.9);
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  10% {
+    transform: scale(0.1);
+    opacity: 0.1;
+  }
+
+  20% {
+    transform: scale(0.2);
+    opacity: 0.2;
+  }
+
+  30% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  40% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  60% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+
+  70% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+
+  90% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.addPost form {
+  padding: 0.5rem 1rem;
+}
+
+.addPost header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  align-items: center;
+}
+
+.formTitleAuthor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.formInput {
+  margin-bottom: 0.5rem;
+}
+
+.formInput label,
+.checkBoxes label {
+  display: block;
+  font-family: var(--font-secondary);
+}
+
+.formInput input,
+.formInput textarea {
+  width: 100%;
+  border: 1px solid var(--color-success);
+  border-radius: 5px;
+  font: inherit;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.formInput input:focus,
+.formInput textarea:focus {
+  box-shadow: 0 0 0.5rem rgba(17, 214, 155, 0.5);
+}
+
+@media (max-width: 550px) {
+  .addPost {
+    width: 400px;
+    top: 170px;
+  }
+
+  .formTitleAuthor {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .addPostContainer::before {
+    top: 0px;
+  }
+
+  .addPostContainer::after {
+    content: "";
+    z-index: 8;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 100%;
+  }
+}
+
+.fileAddBtn {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.fileInputContainer label,
+.addPostBtn {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.flexItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+}
+
+.fileInputContainer label:hover,
+.addPostBtn:hover {
+  transform: scale(1.025);
+}
+
+.fileInputContainer label:active,
+.addPostBtn:active {
+  transform: scale(0.925);
+}

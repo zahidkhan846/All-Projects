@@ -1,0 +1,36 @@
+.projectsContainer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 22, 29);
+  /* background-color: var(--color-lighter); */
+}
+
+@media (max-width: 400px) {
+  .projectsContainer {
+    padding: 1rem;
+  }
+}
+
+.projectsContainer h1 {
+  font-size: 2.5rem;
+}
+
+.projectGrid {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .cardWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,51 @@
+.registerBtn {
+  background-color: var(--color-info) !important;
+  color: var(--color-light);
+}
+
+.formheading {
+  color: var(--color-info) !important;
+}
+
+.formFooter {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.formFooter a {
+  color: var(--color-medium);
+  font-weight: 500;
+}
+
+.changeHeading {
+  color: var(--color-medium) !important;
+}
+
+.changeBtn {
+  background-color: var(--color-medium);
+  color: var(--color-light);
+}
+
+.changeBtn:hover {
+  background-color: var(--color-light-secondary);
+  color: var(--color-dark);
+}
+
+.loginHeading {
+  color: var(--color-success) !important;
+}
+
+.loginBtn {
+  background-color: var(--color-success);
+  color: var(--color-light);
+}
+
+.loginBtn:hover {
+  background-color: var(--color-info);
+}

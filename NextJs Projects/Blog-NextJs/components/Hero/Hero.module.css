@@ -1,0 +1,62 @@
+.hero {
+  background: url(../../public/images/hero-main.jpg) no-repeat center
+    center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero * {
+  z-index: 5;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  height: 100%;
+  gap: 2rem;
+}
+
+.content img {
+  border-radius: 50%;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.content p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  max-width: var(--max-width-small);
+  color: var(--color-medium-light);
+}
+
+.content a {
+  padding: 0.9rem 1.8rem;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  transition: background-color 0.3s ease-in;
+  font: inherit;
+  box-shadow: 0px 0px 10px 0px var(--color-secondary-trans);
+}
+
+.content a:hover {
+  background-color: var(--color-medium);
+  box-shadow: 0px 0px 10px 0px var(--color-medium-trans);
+}

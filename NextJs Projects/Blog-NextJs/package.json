@@ -1,0 +1,23 @@
+{
+  "name": "next-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "bcryptjs": "^2.4.3",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.5",
+    "next": "10.0.9",
+    "next-auth": "^3.13.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-syntax-highlighter": "^15.4.3",
+    "safe-json-stringify": "^1.2.0"
+  }
+}

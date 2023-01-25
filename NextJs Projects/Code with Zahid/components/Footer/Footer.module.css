@@ -1,0 +1,60 @@
+.footerContainer {
+  background-color: rgb(23, 27, 31);
+}
+
+.footer {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.logoLight,
+.social,
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  margin: 0.5rem 0;
+  gap: 1rem;
+}
+
+.socialIcon {
+  font-size: 2rem;
+  color: var(--color-light);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.socialIcon:hover {
+  color: var(--color-neon-pink);
+  transform: scale(1.1);
+}
+
+.copy p {
+  color: var(--color-light);
+  font-weight: 500;
+}
+
+.logoLight a,
+.copy p {
+  opacity: 0.8;
+}
+
+.socialLinks h3 {
+  color: var(--color-secondary);
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}

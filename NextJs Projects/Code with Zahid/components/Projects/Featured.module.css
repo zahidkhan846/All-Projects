@@ -1,0 +1,11 @@
+.featuredContainer {
+  background-color: var(--card-background);
+}
+
+.header {
+  padding: 0.5rem 0;
+}
+
+.header h1 {
+  padding: 0.5rem 0;
+}

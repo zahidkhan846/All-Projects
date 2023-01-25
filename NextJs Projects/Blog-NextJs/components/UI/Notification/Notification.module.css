@@ -1,0 +1,44 @@
+.alertContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.notification {
+  width: 400px;
+  padding: 2rem;
+  position: fixed;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: 10;
+}
+
+.success {
+  background-color: var(--color-success);
+}
+
+.error {
+  background-color: var(--color-danger);
+}
+
+.loading {
+  background-color: var(--color-info);
+}
+
+.loading h1::after {
+  content: "...";
+}
+
+.notification h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.notification p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}

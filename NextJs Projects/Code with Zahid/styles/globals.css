@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,900&display=swap");
+
+:root {
+  --color-primary: rgba(112, 193, 179, 1);
+  --color-primary-trans: rgba(112, 193, 179, 0.5);
+  --color-secondary: rgba(2255, 224, 102, 1);
+  --color-secondary-trans: rgba(2255, 224, 102, 0.5);
+  --color-trans-bg: rgba(80, 81, 79, 0.125);
+  --color-medium: rgba(242, 95, 92, 1);
+  --color-medium-trans: rgba(242, 95, 92, 0.5);
+  --color-blue: rgba(36, 123, 160, 1);
+  --color-blue-trans: rgba(36, 123, 160, 0.5);
+  --color-dark: rgba(80, 81, 79, 1);
+  --color-dark-trans: rgba(80, 81, 79, 0.5);
+  --color-darker: rgba(0, 0, 0, 1);
+  --color-light: rgb(216, 214, 214);
+  --color-lighter: rgba(255, 255, 255, 1);
+  --color-neon-pink: rgb(255, 110, 199);
+  --card-background: #17141d;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: lightseagreen;
+}
+
+image {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Home page social icons */
+
+.social-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 350px) {
+  .social-links {
+    gap: 0.5rem;
+  }
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: var(--color-medium);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  color: var(--color-secondary);
+}
+
+main,
+footer {
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-left: 0;
+  }
+
+  footer {
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+/* Utility */
+.text-colorful {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+}
+
+.color-secondary {
+  background: linear-gradient(120deg, #f1da05, #0bb691);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.5rem;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  margin: 0.5rem auto;
+  border-radius: 3px;
+}
+
+.bg-white-black {
+  background: linear-gradient(90deg, #868481, #eee7ea);
+}
+
+.bg-green-yellow {
+  background: linear-gradient(120deg, #f1da05, #0bb691);
+}
+
+.bg-white {
+  background: var(--color-lighter);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.dark-text {
+  color: var(--color-darker);
+}
+
+.my-min {
+  margin: 0.5rem 0;
+}
+
+.py-min {
+  padding: 0.5rem 0;
+}
+
+.font-2 {
+  font-size: 2rem;
+}
+
+.heading-small {
+  font-size: 18px;
+  color: var(--color-primary-trans);
+  font-weight: 500;
+}
+
+.max-300 {
+  max-width: 300px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+/* 404 styling */
+
+/* STYLING FOR CARD CONTAINER */
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}

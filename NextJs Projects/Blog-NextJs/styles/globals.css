@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* FONTS SETUP */
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Roboto Mono", monospace;
+
+  /* CONTENT AREA */
+  --max-width-big: 1400px;
+  --max-width: 1200px;
+  --max-width-small: 800px;
+  /* COLORS */
+  --color-primary: rgba(245, 203, 92, 1);
+
+  --color-medium: rgba(240, 69, 66, 1);
+  --color-medium-trans: rgba(240, 69, 66, 0.5);
+  --color-medium-light: rgba(255, 185, 185, 1);
+
+  --color-secondary: rgba(20, 32, 62, 1);
+  --color-secondary-trans: rgba(20, 32, 62, 0.5);
+
+  --color-dark: rgba(42, 42, 40, 1);
+  --color-dark-footer: rgb(0, 8, 20);
+  --color-dark-secondary: rgba(51, 53, 51, 1);
+
+  --color-light: rgba(248, 249, 250, 1);
+  --color-light-secondary: rgba(233, 236, 239, 1);
+  --color-danger: hsl(353, 86%, 56%, 0.8);
+  --color-info: hsl(190, 100%, 42%, 0.8);
+  --color-success: hsla(150, 42%, 62%, 0.8);
+}
+
+html,
+body {
+  font-family: var(--font-primary);
+  background: var(--color-light);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-secondary);
+  line-height: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* UTILITY CLASSES */
+.container {
+  max-width: var(--max-width);
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.py-min {
+  padding: 0.5rem 0;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.my-min {
+  margin: 0.5rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.featured-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: #17141d;
+  color: #f4f4f4;
+}
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.featured {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.4rem;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+.all-posts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: var(--color-dark);
+}
+
+.all-posts-container h1 {
+  color: var(--color-dark);
+  font-size: 3rem;
+}
+
+.light-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0;
+}
+
+@media (max-width: 1200px) {
+  .light-card-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .light-card-container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}
+
+.contact-container {
+  width: 100%;
+  background-color: var(--color-primary);
+  padding-bottom: 3rem;
+}
+
+.about-container {
+  max-width: 1000px;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+@media (max-width: 568px) {
+  .about-container {
+    height: auto;
+  }
+}
+
+.font-big {
+  font-size: 3rem;
+}
+
+.text-dark a {
+  color: #17141d;
+}
+
+.text-color a {
+  color: var(--color-primary);
+}
+
+.text-color-success {
+  color: var(--color-success);
+}
+
+.flex-center {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}

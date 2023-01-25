@@ -1,0 +1,35 @@
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-left: 2rem;
+  grid-gap: 1rem;
+  background-color: white;
+  margin-left: 0;
+}
+
+.detail img {
+  height: 100px;
+  object-fit: contain;
+}
+
+.meta {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.meta p {
+  font-size: 16px;
+}
+
+.meta-price span {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.meta-price {
+  font-size: 20px;
+  font-weight: 500;
+}

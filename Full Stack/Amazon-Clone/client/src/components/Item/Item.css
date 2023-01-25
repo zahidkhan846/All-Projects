@@ -1,0 +1,30 @@
+.item img {
+  max-width: 100px;
+  display: block;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  line-height: 1.5;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.item-title {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.item-btn {
+  cursor: pointer;
+  display: block;
+  padding: 0.4rem 1.2rem;
+  margin-top: 0.2rem;
+  background-color: #f3a847;
+  border: 1px solid #815418;
+  border-radius: 3px;
+  font: inherit;
+}

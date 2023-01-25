@@ -1,0 +1,29 @@
+.each-order {
+  background-color: #fff;
+}
+
+.orders-container {
+  background-color: #fff;
+  padding: 1rem 0;
+  /* height: 100vh; */
+}
+
+.orders {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.orders h1 {
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .orders h1 {
+    text-align: center;
+  }
+
+  .orders-container {
+    padding: 1rem;
+  }
+}

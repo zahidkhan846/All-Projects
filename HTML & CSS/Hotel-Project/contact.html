@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discription about the hotel" />
+    <meta name="keywords" content="hotel, cwz hotel" />
+    <title>Contact | Hotel CWZ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    rel="stylesheet"
+    href="mobile.css"
+    media="screen and (max-width: 768px)"
+  />
+    <script
+      src="https://kit.fontawesome.com/040e998871.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <a href="index.html"> <h1 class="logo">HCWZ</h1></a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section id="contact-form">
+        <div class="container">
+          <form action="process.php">
+            <h1 class="text-primary">Contact</h1>
+            <p>Fill out the form below to contact us.</p>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name"  placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" email="email" id="email"  placeholder="user@domain.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea type="text" rows="3" name="message" id="message"  placeholder="Message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-form">Submit</button>
+          </form>
+        </div>
+      </section>
+     <section class="contact-info">
+       <div class="conatiner">
+         <div class="box">
+           <i class="fas fa-hotel fa-3x"></i>
+           <p>50B, Some Random Location</p>
+         </div>
+         <div class="box">
+           <i class="fas fa-phone fa-3x"></i>
+           <p>(999)-543-123</p>
+          </div>
+          <div class="box">
+            <i class="fas fa-envelope fa-3x"></i>
+            <p>www.hcwz.com</p>
+         </div>
+       </div>
+     </section>
+     <div class="clr"></div>
+    <footer id="main-footer" class="bg-dark">
+      <p>
+        Hotel HCWZ &copy <span class="blue">2021</span>
+        <span class="caps-on red"> All rights reserved.</span>
+      </p>
+    </footer>
+  </body>
+</html>

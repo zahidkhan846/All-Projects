@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "content content sidebar"
+        "box-1 box-2 box-2"
+        "box-3 box-3 box-3"
+        "footer footer footer";
+      grid-gap: 1rem;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .box-1 {
+      grid-area: box-1;
+    }
+
+    .box-2 {
+      grid-area: box-2;
+    }
+
+    .box-3 {
+      grid-area: box-3;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+    }
+
+    /* .header,
+    .sidebar,
+    .content,
+    .box-1,
+    .box-2,
+    .box-3,
+    .footer {
+      border: 1px solid black;
+      padding: 1rem;
+    } */
+
+    @media (max-width: 500px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "content"
+          "box-1"
+          "box-2"
+          "box-3"
+          "footer";
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Grid Website</h1>
+      </header>
+      <section class="content">
+        <h3>Welcome to my website</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          voluptate repudiandae animi illo aspernatur, doloribus asperiores
+          omnis, eum unde nesciunt quos eius reiciendis quod in voluptates
+          accusantium cupiditate assumenda eaque deserunt! Molestias nesciunt,
+          assumenda laudantium laborum accusantium nobis minima voluptatem magni
+          aliquam, distinctio quae autem neque natus. Dignissimos adipisci
+          aperiam placeat vero, totam ipsa? Illo voluptatem officia sunt enim
+          recusandae dignissimos sit eos vitae tempora, nesciunt earum similique
+          veritatis, corrupti reiciendis. Iste quam id at? Officia soluta quae
+          aliquid ducimus!
+        </p>
+      </section>
+      <aside class="sidebar">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Company Name</li>
+          <li>532B, Random Street</li>
+          <li>USA</li>
+          <li>email@domain.com</li>
+          <li>999-888-555-1</li>
+        </ul>
+      </aside>
+      <div class="box-1">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur totam
+          sint modi nisi praesentium qui eius, atque magni, voluptatum esse
+          itaque voluptatibus error iure sed rem iste quis, ipsam architecto
+          saepe exercitationem explicabo quaerat cumque. Veniam deserunt
+          doloribus vel minus nesciunt numquam animi, itaque quibusdam,
+          molestiae tempora, vitae omnis. Voluptas!
+        </p>
+      </div>
+      <div class="box-2">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur totam
+          sint modi nisi praesentium qui eius, atque magni, voluptatum esse
+          itaque voluptatibus error iure sed rem iste quis, ipsam architecto
+          saepe exercitationem explicabo quaerat cumque. Veniam deserunt
+          doloribus vel minus nesciunt numquam animi, itaque quibusdam,
+          molestiae tempora, vitae omnis. Voluptas!
+        </p>
+      </div>
+      <div class="box-3">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur totam
+          sint modi nisi praesentium qui eius, atque magni, voluptatum esse
+          itaque voluptatibus error iure sed rem iste quis, ipsam architecto
+          saepe exercitationem explicabo quaerat cumque. Veniam deserunt
+          doloribus vel minus nesciunt numquam animi, itaque quibusdam,
+          molestiae tempora, vitae omnis. Voluptas!
+        </p>
+      </div>
+      <footer class="footer">
+        <p>Copyright &copy; 2021 | Code with Zahid</p>
+      </footer>
+    </div>
+  </body>
+</html>

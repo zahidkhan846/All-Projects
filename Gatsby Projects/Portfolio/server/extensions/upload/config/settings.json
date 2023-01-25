@@ -1,0 +1,8 @@
+{
+  "provider": "cloudinary",
+  "providerOptions": {
+    "cloud_name": "zahidkhan",
+    "api_key": "118318555789987",
+    "api_secret": "J7vO_tD7f-UybqfIu73O5C-XaOY"
+  }
+}

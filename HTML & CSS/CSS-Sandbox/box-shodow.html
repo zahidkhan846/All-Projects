@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      .box {
+        border: 1px solid black;
+        background: darkblue;
+        color: white;
+        margin: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+        /* X Y COLOR */
+        box-shadow: 5px 5px grey;
+        /* X Y BLUR RADIUS C */
+        box-shadow: 5px 5px 5px grey;
+        /* X Y BLUR RADIUS SPREAD RADIUS C */
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+        /* inset X Y C */
+        box-shadow: inset -5px -5px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+          quaerat!
+        </p>
+      </div>
+      <div class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+          quaerat!
+        </p>
+      </div>
+      <div class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+          quaerat!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

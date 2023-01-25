@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_project_itm_project_itms",
+  "info": {
+    "name": "project_itm",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

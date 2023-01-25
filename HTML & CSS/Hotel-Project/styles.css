@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* NAVBAR */
+#navbar {
+  background: #333;
+  overflow: auto;
+  color: white;
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  background: #444;
+  color: #f54f4f;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+#showcase {
+  background: url(./images/img1.jpg) no-repeat center center/cover;
+  color: white;
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  text-align: center;
+  padding-top: 140px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  color: #444;
+}
+
+#showcase .showcase-content p {
+  padding: 20px;
+  line-height: 1.5em;
+  background-color: #f7c08a;
+  border-radius: 1rem;
+  opacity: 0.8;
+  color: #333;
+  font-weight: 500;
+}
+
+.text-primary {
+  color: #e93f14;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333;
+  text-transform: capitalize;
+}
+
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  min-height: 100%;
+  background: url(./images/img2.jpg) no-repeat center center/cover;
+  width: 50%;
+  float: left;
+}
+
+#home-info .info-content {
+  height: 100%;
+  width: 50%;
+  float: right;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+.bg-dark {
+  background: #444;
+  color: #fff;
+}
+.bg-light {
+  background: #fff;
+  color: #444;
+}
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+#home-info .info-content p {
+  padding: 0 0 20px 0;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 20px;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.blue {
+  color: skyblue;
+}
+
+.red {
+  color: salmon;
+}
+
+.caps-on {
+  text-transform: uppercase;
+}
+
+.clr {
+  clear: both;
+}
+
+#abt-info h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+#abt-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+#abt-info .info-left p {
+  padding: 20px;
+}
+
+#abt-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#abt-info .info-right img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#testimonials {
+  height: 800px;
+  background: url(./images/img1.jpg) no-repeat center center/cover;
+  padding: 40px 0;
+}
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+  width: 100px;
+  border-radius: 20%;
+  float: left;
+  margin-right: 20px;
+}
+
+#testimonials h2 {
+  text-align: center;
+  color: #f4f4f4;
+}
+
+#contact-form {
+  background-color: #444;
+  /* height: 100vh; */
+  padding-bottom: 30px;
+}
+
+#contact-form h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#contact-form p {
+  text-align: center;
+}
+
+#contact-form form {
+  margin: 30px auto;
+  width: 450px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+#contact-form .form-group input:focus,
+#contact-form .form-group textarea:focus {
+  outline: none;
+  border: 2px solid #333;
+}
+
+.btn-form {
+  width: 100%;
+  background-color: #49c1a2;
+  padding: 7px;
+  text-transform: capitalize;
+}
+
+.btn-form:hover {
+  background-color: #109272;
+  color: #f4f4f4;
+}
+
+.contact-info p {
+  color: #e93f14;
+}
+.contact-info i {
+  color: #0a794b;
+}

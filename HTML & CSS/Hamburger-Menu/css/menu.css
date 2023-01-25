@@ -1,0 +1,135 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-container .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-container .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-container .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 0.12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.menu-container .hamburger > div::before,
+.menu-container .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  height: 0.12rem;
+  width: 100%;
+  background: #ffffff;
+}
+
+.menu-container .hamburger > div::after {
+  top: 10px;
+}
+
+/* TOGGLER ANIMATION */
+
+.menu-container .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.menu-container .toggler:checked + .hamburger > div::before,
+.menu-container .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu-container .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+.menu-container .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-container .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-container .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.5 ease;
+}
+
+.menu-container .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.menu-container .menu > div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  width: 400vh;
+  height: 400vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: all 0.5s ease;
+  transform: scale(0);
+}
+
+.menu-container .menu > div > div {
+  text-align: center;
+  max-width: 90vh;
+  max-height: 100vh;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.menu-container .menu > div > div > ul > li {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-container .menu > div > div > ul > li > a {
+  transition: all 0.5s ease-in;
+}
+
+.menu-container .menu > div > div > ul > li > a:hover {
+  color: var(--secondary-color);
+}

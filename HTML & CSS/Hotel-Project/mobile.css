@@ -1,0 +1,62 @@
+#navbar h1 {
+  float: none;
+  text-align: center;
+}
+
+#navbar ul,
+#navbar ul li {
+  float: none;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: 1px dotted #555;
+}
+
+#showcase {
+  height: 100%;
+}
+
+#showcase .showcase-content {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+#home-info .info-img {
+  display: none;
+}
+
+#home-info .info-content {
+  height: 100%;
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+.box {
+  float: none;
+  width: 100%;
+}
+
+#abt-info .info-left {
+  float: none;
+  width: 100%;
+}
+
+#abt-info .info-right {
+  float: none;
+  width: 100%;
+}
+
+#testimonials .testimonial img {
+  display: block;
+  width: 100px;
+  float: none;
+  margin: auto;
+}
+
+#contact-form form {
+  width: 400px;
+}

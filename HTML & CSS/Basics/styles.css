@@ -1,0 +1,20 @@
+.body {
+  line-height: 1.4em;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.box {
+  background: lightgray;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.box p {
+  text-align: center;
+  text-align: justify; /*EVEN START LINE */
+}

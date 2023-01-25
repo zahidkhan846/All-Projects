@@ -1,0 +1,76 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  max-width: 500px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.cardContainer img {
+  max-width: 450px;
+  height: 300px;
+}
+
+.cardContainer h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: darkred;
+  text-transform: capitalize;
+}
+
+/* .cardContainer h1::after {
+  content: "***";
+  color: grey;
+  position: relative;
+  top: 15px;
+  left: 5px;
+} */
+
+.cardContainer .desc,
+.cardContainer .loc {
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.cardContainer .date {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.loc span,
+.date span {
+  color: gray;
+}
+
+.loc {
+  font-style: italic;
+}
+
+.desc {
+  color: darkred;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btnContainer a {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid darkred;
+  background: darkred;
+  color: #fff;
+  margin: 0.5rem 0;
+  transition: all 0.3s;
+}
+
+.btnContainer a:hover {
+  background: white;
+  color: darkred;
+}
+
+.btnContainer a:active {
+  background: darkred;
+  color: #fff;
+}

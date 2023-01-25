@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-paragraph {
+  line-height: 1.5;
+  font-size: 17px;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #bb4317;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  padding: 1rem 2rem;
+  background-color: #444;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem 0;
+    height: auto;
+  }
+
+  .header h1 {
+    color: lightblue;
+  }
+
+  .header span {
+    color: coral;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 1rem;
+    background-color: yellow;
+  }
+
+  .nav-links a {
+    color: #333;
+    font-size: 18px;
+  }
+}
+
+h1 {
+  color: lightseagreen;
+}
+
+.posts {
+  background-color: #333;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.card {
+  border: 1px solid yellowgreen;
+  margin: 1rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card:hover,
+.card.active {
+  background-color: #f4f4f4;
+  transform: scale(1.02);
+}
+
+.card h1 {
+  font-size: 20px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  text-transform: capitalize;
+  border-bottom: yellowgreen 1px dashed;
+}
+
+.card p {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  color: #bb4317;
+}
+
+.post {
+  padding: 0 1rem;
+}
+
+.post h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.post h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: left;
+  color: yellow;
+}
+
+.post p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: lightcoral;
+}
+
+.btn {
+  background-color: #333;
+  padding: 0.7rem 1.6rem;
+  cursor: pointer;
+}

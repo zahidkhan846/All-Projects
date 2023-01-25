@@ -1,0 +1,12 @@
+.singleEvent {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 568px) {
+  .singleEvent {
+    grid-template-columns: 1fr;
+  }
+} ;

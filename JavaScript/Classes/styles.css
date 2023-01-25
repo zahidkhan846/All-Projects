@@ -1,0 +1,149 @@
+:root {
+  --primary-color: rgba(43, 36, 36, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.all-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  height: 420px;
+  width: 300px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.product-detail img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+/* CART */
+
+.cart-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cart-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--primary-color);
+  width: 500px;
+  overflow: hidden;
+  color: white;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.prod-img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* UTILS */
+.px-1 {
+  padding: 0 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.full {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-order {
+  border: 1px solid lightgreen;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  color: lightgreen;
+  background-color: #111;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .all-products {
+    grid-template-columns: 1fr 1fr;
+  }
+}

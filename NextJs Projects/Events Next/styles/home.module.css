@@ -1,0 +1,19 @@
+.homeContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.homeHead {
+  color: #111;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 568px) {
+  .homeContainer {
+    grid-template-columns: 1fr;
+  }
+}

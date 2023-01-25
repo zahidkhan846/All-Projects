@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fev Movies</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="home-page">
+    <header>
+      <h1>Favorite Movies</h1>
+      <button id="add-movie" class="btn">Add Movie</button>
+    </header>
+    <main class="container">
+      <div class="home">
+        <div id="backdrop" class="backdrop"></div>
+        <div id="add-movie-model" class="model">
+          <div class="model-content">
+            <div class="model-header">
+              <h4>Add Details</h4>
+            </div>
+            <div class="form-control">
+              <label for="title">Movie Title</label>
+              <input type="text" name="title" id="title" />
+            </div>
+            <div class="form-control">
+              <label for="image-url">Image URL</label>
+              <input type="text" name="image-url" id="image-url" />
+            </div>
+            <div class="form-control">
+              <label for="rating">Rating</label>
+              <input
+                type="number"
+                step="1"
+                max="5"
+                min="1"
+                name="rating"
+                id="rating"
+              />
+            </div>
+            <div class="model-btn">
+              <button class="btn sucess">Add</button>
+              <button class="btn cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div id="confirm-delete" class="model">
+          <div class="confirm-delete-model">
+            <p>Are you sure you want to delete this?</p>
+            <div class="delete-btn">
+              <button class="btn no">Cancel</button>
+              <button class="btn yes">Confirm</button>
+            </div>
+          </div>
+        </div>
+        <div id="no-movies" class="card">
+          <h3>Your favorite movies will appear here.</h3>
+        </div>
+        <ul id="movies-list"></ul>
+      </div>
+    </main>
+  </body>
+</html>

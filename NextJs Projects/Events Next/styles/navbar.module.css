@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 2.5rem;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logo a {
+  color: coral !important;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLinks li {
+  background-color: coral;
+  color: #111;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.socialLinks li:hover {
+  background-color: darkred;
+  color: #fff;
+}
+
+@media (max-width: 568px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+}

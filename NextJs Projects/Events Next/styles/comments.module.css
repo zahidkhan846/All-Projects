@@ -1,0 +1,64 @@
+.comments {
+  max-width: 550px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  background-color: #77c4f1;
+}
+
+.comments h2 {
+  text-align: center;
+}
+
+.commentContainer {
+  padding: 1rem;
+}
+
+.commentContainer h2 {
+  margin-bottom: 0.5rem;
+  color: #055551;
+}
+
+.formControl {
+  margin: 1rem 0;
+}
+
+.formGroup {
+  margin: 0.5rem 0;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 2px;
+  color: #055551;
+}
+
+.outputComments {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+}
+
+.outputComments ul li {
+  border-bottom: 1px dashed gray;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.outputComments ul li .spanUser {
+  color: grey;
+}
+
+.outputComments ul li:last-child {
+  margin-bottom: 0;
+}
+
+.formGroup input,
+.formGroup textarea {
+  font: inherit;
+  width: 100%;
+  padding: 0.4rem;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+}

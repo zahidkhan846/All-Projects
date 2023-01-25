@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .main {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .main h1 {
+    font-size: 40px;
+  }
+}

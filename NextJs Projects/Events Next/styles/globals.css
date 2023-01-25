@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: lightgray;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: #444;
+  color: #fff;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.footer h1 {
+  font-size: 2rem;
+  color: cornflowerblue;
+}
+
+.address {
+  color: grey;
+}
+
+.address span {
+  color: lightblue;
+}
+
+.footer form h2 {
+  margin-bottom: 0.5rem;
+}
+
+.footer input {
+  font: inherit;
+  border: 1px solid coral;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.footer button {
+  padding: 0.5rem 1rem;
+  background-color: coral;
+  font: inherit;
+  border: 1px solid coral;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social span {
+  color: lightgreen;
+}
+
+.icon {
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 568px) {
+  .footer-container {
+    height: auto;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+
+.btn-comments {
+  cursor: pointer;
+  display: block;
+  padding: 0.7rem 1.8rem;
+  margin: 2rem auto;
+  font: inherit;
+  background-color: lightseagreen;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+}
+
+.btn-comments:focus {
+  border: 1px solid lightseagreen;
+  background-color: #f4f4f4;
+  color: lightseagreen;
+  outline: none;
+}
+
+.my-5 {
+  margin: 0.5rem auto;
+}
+
+.text-danger {
+  color: #f32009;
+}
+
+.text-center {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.mt-5 {
+  margin-top: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 0.5rem;
+}
+
+.notification-card {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 2rem 0;
+}

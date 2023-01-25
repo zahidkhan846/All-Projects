@@ -1,0 +1,7 @@
+{
+  "env": {
+    "PORT": "8080",
+    "MONGODB_URI": "mongodb+srv://zake:Mu0QRhZn4yV5CJwN@cluster0.ecnox.mongodb.net/blog",
+    "MONGODB_URI_TEST": "mongodb+srv://zake:Mu0QRhZn4yV5CJwN@cluster0.ecnox.mongodb.net/test"
+  }
+}

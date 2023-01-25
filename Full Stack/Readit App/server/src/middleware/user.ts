@@ -1,0 +1,26 @@
+import { NextFunction, Request, Response } from "express";
+import jwt from "jsonwebtoken";
+import User from "../entities/User";
+
+export const checkUserStatus = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const token = req.cookies.token;
+
+    if (!token) {
+      return next();
+    }
+
+    const { username }: any = jwt.verify(token, process.env.JWT_SECRET);
+    const currentUser = await User.findOne({ username });
+
+    res.locals.user = currentUser;
+
+    return next();
+  } catch (error) {
+    return res.status(401).json({ error: error.message });
+  }
+};

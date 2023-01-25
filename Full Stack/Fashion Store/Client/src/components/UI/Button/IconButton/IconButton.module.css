@@ -1,0 +1,19 @@
+.iconBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+
+.iconBtn:hover {
+  transform: scale(1.1);
+}
+
+.iconBtn:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,115 @@
+.chat {
+  /* background-color: green; */
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  height: 10vh;
+}
+
+.headerLeft {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.chatMain {
+  background-image: url(../images/chatbg.png);
+  background-position: center;
+  background-repeat: repeat;
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+.chatBody {
+  padding: 0.5rem;
+  flex: 1;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatBody::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.chatBody::-webkit-scrollbar-thumb {
+  background: #517e7e;
+  border-radius: 0.25rem;
+}
+
+.chatMessage {
+  margin-bottom: 1rem;
+  max-width: 70%;
+  align-self: flex-start;
+}
+
+.messageText {
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
+}
+
+.messageText span {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: grey;
+  font-size: 12px;
+}
+
+.user {
+  color: grey;
+  font-size: 12px;
+  margin: 0 0.5rem;
+}
+
+.receiver {
+  margin-bottom: 1rem;
+  max-width: 70%;
+  align-self: flex-end;
+}
+
+.receiverMessageText {
+  background-color: #fff4c2;
+}
+
+.receiver .user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.sendNewMessage {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.messageInput {
+  flex: 1;
+}
+
+.messageInput input {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  outline: none;
+  border: none;
+  font: inherit;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+
+.miIcon {
+  font-size: 2rem;
+}

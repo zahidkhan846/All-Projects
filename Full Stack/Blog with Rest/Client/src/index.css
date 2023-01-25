@@ -1,0 +1,61 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  @apply flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono;
+}
+
+.sidenav {
+  @apply grid grid-rows-4 text-center items-center bg-green-500 hover:bg-yellow-300 transition duration-300 ease-in-out;
+}
+
+.side-link {
+  @apply p-4 hover:bg-green-500 transition duration-300 ease-in-out;
+}
+
+.page-name {
+  @apply lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14;
+}
+
+.hero-button {
+  @apply py-6 px-10 bg-green-500 rounded-full text-2xl hover:bg-yellow-300 transition duration-300 ease-in-out flex items-center animate-bounce;
+}
+
+.post-card {
+  @apply flex flex-col justify-center items-center bg-white h-screen font-mono py-40;
+}
+
+.post-content {
+  @apply flex flex-col justify-center items-start w-2/4;
+}
+
+.form-container {
+  @apply m-auto w-96 h-screen;
+}
+
+@media screen and (min-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input {
+  padding: 5px;
+}

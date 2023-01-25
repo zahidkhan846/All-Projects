@@ -1,0 +1,22 @@
+{
+  "name": "readit-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/zahidkhan846/readit.git"
+  },
+  "keywords": [
+    "next",
+    "sql",
+    "node"
+  ],
+  "author": "zahid",
+  "license": "MIT",
+  "dependencies": {}
+}

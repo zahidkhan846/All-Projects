@@ -1,0 +1,44 @@
+.messagesList {
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1rem 2rem;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse !important;
+}
+
+.messagesList::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+.messagesList::-webkit-scrollbar-thumb {
+  background: linear-gradient(13deg, #f9d4ff 14%, #c7ceff 64%);
+  border-radius: 10px;
+}
+
+.messagesList::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+}
+
+.messagesList::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .messagesList {
+    padding: 0.5rem;
+  }
+
+  .messagesList {
+    height: 65vh;
+  }
+
+  .messagesList::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

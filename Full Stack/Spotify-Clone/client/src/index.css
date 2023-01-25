@@ -1,0 +1,153 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 90vh;
+}
+
+.first {
+  background-color: black;
+}
+
+.first ul {
+  background-color: rgb(37, 35, 35);
+}
+
+.first ul li {
+  padding: 0.9rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first button {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  border-radius: 25px;
+  outline: none;
+  transition: transform 0.3s ease;
+  background: linear-gradient(90deg, #e52e71, #111111);
+  color: white;
+}
+
+.first button:hover {
+  transform: scale(1.05);
+}
+
+.second {
+  background: linear-gradient(180deg, #e52e71, #111111);
+}
+
+.second header {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second input {
+  padding: 0.5rem 1rem;
+  width: 400px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.second main {
+  width: 100%;
+  height: 100%;
+}
+
+.second main .song-list {
+  width: 100%;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0 4rem;
+  align-items: center;
+}
+
+.track-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 81px;
+}
+
+.info-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.track-image {
+  width: 81px;
+}
+
+.play-button {
+  width: 70px;
+  margin-right: 1rem;
+}
+
+.play-btn {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.play-btn__svg {
+  transition: 1s;
+  fill: #7c7c7c;
+  opacity: 0.5;
+}
+
+.play-btn:hover .play-btn__svg {
+  fill: #f7e8eb;
+  opacity: 1;
+}

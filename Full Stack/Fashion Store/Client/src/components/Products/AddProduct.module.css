@@ -1,0 +1,59 @@
+.addProduct {
+  display: flex;
+  justify-content: center;
+  padding: 1rem auto;
+}
+
+.addProduct h2 {
+  margin-bottom: 1rem;
+}
+
+.addProduct form {
+  padding: 1rem;
+  min-width: 450px;
+  background-color: lightgray;
+}
+
+.formControl {
+  margin-bottom: 0.5rem;
+}
+
+.formControl:last-child {
+  margin-bottom: 0;
+}
+
+.formControl label {
+  display: block;
+}
+
+.formControl input,
+.formControl textarea {
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  font: inherit;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filediv {
+  position: relative !important;
+  background-color: #c02a96;
+  width: 40%;
+  text-align: center;
+  padding: 0.75rem 0;
+  margin: 0.75rem 0;
+  color: #fff;
+}
+
+.fileBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer !important;
+  opacity: 0;
+}

@@ -1,0 +1,2 @@
+install quill
+quill/dist/quil.snow.css

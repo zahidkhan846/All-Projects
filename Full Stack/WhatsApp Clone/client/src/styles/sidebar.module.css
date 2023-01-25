@@ -1,0 +1,83 @@
+.sidebar {
+  background-color: white;
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00bfa5;
+  padding: 0.5rem;
+  align-items: center;
+  height: 10vh;
+  gap: 1rem;
+}
+
+.headerLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.leftIcons {
+  display: flex;
+}
+
+.headerRight {
+  width: 20%;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 0 0.5rem;
+  background-color: #f4f4f4;
+  height: 70px;
+}
+
+.searchIcon {
+  color: grey;
+}
+
+.searchContainer input {
+  border: none;
+  outline: none;
+  padding: 0.6rem 0.3rem;
+  font: inherit;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+/* CHAT LIST BUTTON COMPONENT */
+.chat {
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.chat::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.chat::-webkit-scrollbar-thumb {
+  background: #517e7e;
+  border-radius: 0.25rem;
+}
+
+.chatListButton {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  height: 70px;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.chatListButton:hover {
+  background-color: lightgrey;
+}
+
+.chatListButton p {
+  color: grey;
+}

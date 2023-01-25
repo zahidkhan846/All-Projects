@@ -1,0 +1,7 @@
+.lists:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.lists {
+  border-bottom: 1px solid lightgray !important;
+}

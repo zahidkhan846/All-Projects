@@ -1,0 +1,169 @@
+.headerContainer {
+  height: 70px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding: 0 3rem;
+  column-gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.navItems li {
+  padding: 24px 0;
+  border-bottom: 0.25rem solid transparent;
+  cursor: pointer;
+}
+
+.navItems li:hover {
+  border-bottom: 0.25rem solid rgb(235, 76, 14);
+}
+
+.navItems li a {
+  font-weight: 500;
+}
+
+.search {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.5rem;
+  opacity: 0.5;
+}
+
+.search input {
+  width: 100%;
+  background-color: #f4f4f4;
+  border: none;
+  outline: none;
+  padding: 0.75rem 0.5rem;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.search input::placeholder {
+  position: absolute;
+  left: 2rem;
+}
+
+.userLinks {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.userLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.25rem;
+  position: relative;
+  padding: 15px 7px;
+  border-bottom: 5px solid transparent;
+}
+
+.userLink:hover {
+  border-bottom: 5px solid lightseagreen;
+}
+
+.onProfileHover {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  top: 70px;
+  z-index: 100;
+}
+
+.userLinkTag {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.userLink:hover .onProfileHover {
+  display: block;
+}
+
+/* PROFILE ITEM CSS */
+.dropDownCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100%;
+  row-gap: 1rem;
+}
+
+.auth a {
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: rgb(236, 91, 193);
+  border: 1px solid lightgrey;
+}
+
+.auth a:hover {
+  border: 1px solid rgb(236, 91, 193);
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.order a:hover {
+  color: rgb(236, 91, 193);
+}
+
+.btnLink {
+  border: 1px solid lightgray;
+  outline: none;
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  font: inherit;
+  color: rgb(233, 64, 134);
+  cursor: pointer;
+}
+
+.btnLink:hover {
+  border: 1px solid black;
+}

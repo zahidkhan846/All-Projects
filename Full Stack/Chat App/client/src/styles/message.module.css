@@ -1,0 +1,107 @@
+.li {
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+.message {
+  background: linear-gradient(13deg, #c7ceff 25%, #f4f4f4 75%);
+  border-radius: 0 45px 45px 45px;
+  padding: 0.25rem 0;
+  max-width: 60%;
+  align-self: flex-start;
+
+  position: relative;
+}
+
+.myMessage {
+  background: linear-gradient(13deg, #f4f4f4 25%, #efbff3 75%);
+  align-self: flex-end;
+  border-radius: 45px 45px 0 45px;
+}
+
+.content {
+  padding: 0 2rem;
+  font-size: 14px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 12px;
+  text-transform: capitalize;
+  gap: 0.5rem;
+  color: rgb(107, 97, 97);
+}
+
+.username {
+  color: rgb(238, 104, 126);
+}
+
+.time {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .message {
+    background: linear-gradient(13deg, #c7ceff 25%, #f4f4f4 75%);
+    border-radius: 45px 45px 45px 45px;
+    padding: 0.25rem 0;
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  .myMessage {
+    background: linear-gradient(13deg, #f4f4f4 25%, #efbff3 75%);
+    max-width: 100%;
+    align-self: flex-start;
+    border-radius: 45px 45px 45px 45px;
+  }
+}
+
+.emoji {
+  position: absolute;
+  top: -86px;
+  left: 0;
+  background: rgba(255, 255, 255, 1);
+  padding: 0 0.5rem;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  z-index: 500;
+  border-radius: 10px;
+}
+
+.emoji button {
+  padding: 0;
+  margin: 5px;
+  background: transparent;
+  box-shadow: none;
+  transition: transform 300ms;
+}
+
+.emoji button:hover {
+  transform: scale(1.25);
+}
+
+.selectedEmote,
+.otherEmote {
+  position: absolute;
+  bottom: -25px;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.selectedEmote {
+  left: 0;
+}
+
+.otherEmote {
+  right: 0;
+}

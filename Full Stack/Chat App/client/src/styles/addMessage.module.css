@@ -1,0 +1,35 @@
+.addMessage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 2rem;
+  height: 10vh;
+  width: 100%;
+}
+
+.addMessage input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font: inherit;
+  background: #f4f4f4;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+
+.addMessageIcon {
+  color: rgb(101, 122, 243) !important;
+  height: 40px;
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .addMessage {
+    justify-content: center;
+  }
+
+  .addMessageIcon {
+    display: none !important;
+  }
+}

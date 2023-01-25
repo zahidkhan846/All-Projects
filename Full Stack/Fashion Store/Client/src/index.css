@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --custom-bg: linear-gradient(
+    90deg,
+    rgb(235, 199, 199),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(233, 228, 198),
+    rgb(255, 255, 255)
+  );
+
+  --bg-primary: #ff3f6c;
+  --color-primary: #ff3f6c;
+}
+
+#root {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* utils */
+
+.mb-min {
+  margin-bottom: 0.5rem;
+}
+
+.mr-min {
+  margin-right: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.px-min {
+  padding: 0 0.5rem;
+}
+
+.text-red {
+  color: salmon;
+  font-weight: 100;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-crossed {
+  text-decoration: line-through;
+  font-weight: 100;
+}
+
+.text-light {
+  font-weight: 100;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.one-line {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bg-colorful {
+  background: var(--custom-bg);
+}
+
+.form {
+  background-color: #fff;
+  width: 400px;
+  /* height: 80vh; */
+}
+
+.form img {
+  width: 400px;
+  object-fit: cover;
+}
+
+.form-elements {
+  padding: 3rem 2rem;
+}
+
+.form-elements h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* .form-elements p {
+  padding: 2rem 0;
+} */
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.text-grey {
+  color: gray !important;
+}
+
+.text-pink {
+  color: #ff3f6c;
+}
+
+.text-green {
+  color: rgb(36, 136, 70) !important;
+}
+
+.text-blue {
+  color: blue !important;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.form-control input {
+  padding: 0.7rem;
+  font: inherit;
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+.form-control input:focus {
+  border: 1px solid #111;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #ff3f6c;
+  color: #fff;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.mt-min {
+  margin-top: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ICON BUTTON CUSTOM COLORS */
+
+.colorDelete {
+  color: red;
+}
+
+.bg-prim {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

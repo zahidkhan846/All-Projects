@@ -1,0 +1,16 @@
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.sub {
+  border-bottom: 1px solid rgb(231, 229, 229);
+  padding: 0.5rem;
+}
+
+.sub:last-child {
+  border-bottom: 1px solid transparent !important;
+}
